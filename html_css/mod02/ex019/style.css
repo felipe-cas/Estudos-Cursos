@@ -1,0 +1,30 @@
+@charset: "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+body{
+	background-color: #F2F4CB;
+	font-family: Lato, sans-serif;
+}
+
+h1{
+	color: #304B35;
+	font-weight: 700;
+}
+
+h2{
+	color: #3A5A40;
+	font-weight: 400;
+}
+
+#main_title{
+	color: #FFFFFF;
+	text-align: center;
+	background-color: #304B35;
+}
+
+.sub_title{
+	text-align: center;
+	background-color: #A5D0A8;
+}

@@ -1,0 +1,31 @@
+nav{
+	background-color: var(--dark_emerald);
+	font-size: 0.89em;
+	font-weight: bold;
+
+	padding: 12px;
+}
+
+nav > a{
+	color: #FFFFFF;
+	text-decoration: none;
+
+	padding: 12px 8px;
+	border-radius: 10px;
+	transition-duration: 0.3s;
+}
+
+a:hover{
+	background-color: #3DDC8280;
+	color: var(--dark_emerald);
+}
+
+footer{
+	background-color: var(--dark_emerald);
+	color: white;
+
+	font-size: 1em;
+
+	text-align: center;
+	padding: 5px;
+}
