@@ -1,0 +1,68 @@
+	.file	"biblioteca_stdlib.c"
+	.text
+	.section	.rodata
+	.align 8
+.LC0:
+	.string	"QUQNTOS NUMEROS DESEJA GERAR: "
+.LC1:
+	.string	"%i"
+.LC2:
+	.string	"ITERA\303\207\303\203O: %i, RAND: %i\n"
+	.text
+	.globl	main
+	.type	main, @function
+main:
+.LFB6:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	subq	$16, %rsp
+	leaq	.LC0(%rip), %rax
+	movq	%rax, %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	-8(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC1(%rip), %rax
+	movq	%rax, %rdi
+	movl	$0, %eax
+	call	__isoc99_scanf@PLT
+	movl	$1, -4(%rbp)
+	jmp	.L2
+.L3:
+	call	rand@PLT
+	movl	%eax, %edx
+	movslq	%edx, %rax
+	imulq	$1374389535, %rax, %rax
+	shrq	$32, %rax
+	sarl	$5, %eax
+	movl	%edx, %ecx
+	sarl	$31, %ecx
+	subl	%ecx, %eax
+	imull	$100, %eax, %ecx
+	movl	%edx, %eax
+	subl	%ecx, %eax
+	movl	-4(%rbp), %ecx
+	movl	%eax, %edx
+	movl	%ecx, %esi
+	leaq	.LC2(%rip), %rax
+	movq	%rax, %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	addl	$1, -4(%rbp)
+.L2:
+	movl	-8(%rbp), %eax
+	cmpl	%eax, -4(%rbp)
+	jle	.L3
+	movl	$0, %eax
+	leave
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE6:
+	.size	main, .-main
+	.ident	"GCC: (Debian 14.3.0-5) 14.3.0"
+	.section	.note.GNU-stack,"",@progbits
