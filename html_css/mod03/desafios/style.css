@@ -1,4 +1,4 @@
-@charset: utf-8;
+@charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
@@ -18,8 +18,8 @@ header{
 }
 
 header h1{
-	font-family: "Passion One", "Noto Sans";
-	font-size: 5em;
+	font-family: "Passion One", Cursive;
+	font-size: 5vw;
 	padding-top: 20px;
 }
 
@@ -49,15 +49,17 @@ header a:hover{
 }
 
 section{
-	padding: 10px 20px;
-	line-height: 2em;
+	padding: 10vh 20px;
+	line-height: 5vw;
 }
 
 section pre{
-	font-family: "Sriracha", "Passion One", "Noto Sans";
+	font-family: "Sriracha", cursive;
+
+	font-size: 3vw;
 
 	padding: 0px 10px;
-	max-width: 300px;
+	max-width: 40vw;
 	border-radius: 5px;
 }
 
