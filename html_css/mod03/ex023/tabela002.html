@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TABELA 002</title>
+
+	<style>
+		body{
+			font-family: Courier;
+		}
+
+		table{
+			width: 500px;
+			border-collapse: collapse;
+		}
+
+		caption{
+			font-size: 1.3em;
+			font-weight: bold;
+			color: white;
+			background-color: rgba(0, 0, 0, 0.7);
+			padding: 3px;
+		}
+
+		td, th{
+			border: 1px solid black;
+			padding: 5px;
+		}
+
+		thead, tfoot{
+			background-color: lightgray;
+			color: gray;
+			font-weight: bold;
+		}
+
+		.val_num{
+			text-align: right;
+		}
+	</style>
+
+
+</head>
+<body>
+	<h1>Tabelas semânticas</h1>
+
+	<table>
+		<caption>População por Estados 2020</caption>
+		<thead>
+			<tr>
+				<th>ESTADO</th>
+				<th>POPULAÇÃO</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>São Paulo</td>
+				<td class="val_num">45.919.049</td>
+			</tr>
+			<tr>
+				<td>Minas Gerais</td>
+				<td class="val_num">21.168.791</td>
+			</tr>
+			<tr>
+				<td>Rio de janeiro</td>
+				<td class="val_num">17.264.943</td>
+			</tr>
+			<tr>
+				<td>Bahia</td>
+				<td class="val_num">14.873.064</td>
+			</tr>
+			<tr>
+				<td>Paraná</td>
+				<td class="val_num">11.433.857</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th>TOTAL DE HABITANTES</th>
+				<td class="val_num"><strong>110.659.704</strong></td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>
