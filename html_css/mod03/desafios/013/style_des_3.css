@@ -1,0 +1,51 @@
+@charset UTF-8;
+
+body{
+	font-family: Arial;
+}
+
+h1{
+	text-align: center;
+	padding: 30px;
+}
+
+table{
+	width: 60vw;
+	height: 50vh;
+	border-collapse: collapse;
+	margin: auto;
+}
+
+td, th{
+	border: 1px solid black;
+}
+
+th{
+	background-color: #6E6A6F;
+	color: white;
+}
+
+tr:nth-child(odd){
+	background-color: #D4D2D599;
+}
+
+
+.nota{
+	text-align: center;
+}
+
+.media{
+	text-align: left;
+	text-indent: 10px;
+}
+
+.media_num{
+	background-color: #6E6A6F;
+	color: white;
+	font-weight: bolder;
+}
+
+.area{
+	background-color: #BFAFA6E6;
+	color: black;
+}
