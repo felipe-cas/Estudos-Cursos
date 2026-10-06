@@ -4,14 +4,32 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>IFRAME 001</title>
+
+	<style>
+		iframe{
+			height: 70vh;
+			width: 60vw;
+			border: 2px solid red;
+		}
+
+		#iframe_teste{
+			text-align: center;
+		}
+
+		h1, p{
+			text-align: center;
+		}
+	</style>
+
 </head>
 <body>
 	<h1>Conhecendo Iframes</h1>
 
-	<p>Aqui temos 
-
-		<iframe src="https://www.cursoemvideo.com"></iframe>
-
-	um iframe</p>
+	<p>Este é um iframe</p>
+	<div id="iframe_teste">
+		<iframe src="https:www.cursoemvideo.com" title="iframe_teste">
+			<a href="https:www.cursoemvideo.com">Site do Curso em video</a>
+		</iframe>
+	</div>
 </body>
 </html>
