@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IFRAME 005</title>
+
+	<style>
+		body{
+			font-family: Arial;
+		}
+
+		iframe{
+			height: 300px;
+			width: 500px;
+			border: 2px dashed red;
+		}
+	</style>
+
+</head>
+<body>
+	<h1>Segurança com Iframes</h1>
+	<iframe src="pagina_extra.html" sandbox="allow-forms allow scripts allow-same-origin" referrerpolicy="no-referrer"></iframe>
+</body>
+</html>
