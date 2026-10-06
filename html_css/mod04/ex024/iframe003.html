@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IFRAME 003</title>
+
+	<style>
+		body{
+			font-family: Arial;
+			text-align: center;
+		}
+
+		li{
+			display: inline;
+			padding: 0px 10px;
+		}
+
+		li > a{
+			text-decoration: none;
+			font-weight: bolder;
+			color: lightcoral;
+		}
+
+		li > a:hover{
+			text-decoration: underline;
+		}
+
+		iframe{
+			display: block;
+			margin: auto;
+
+			height: 80vh;
+			width: 90vw;
+
+			border: 2x solid black;
+		}
+	</style>
+
+</head>
+<body>
+
+	<h1>Iframes carregados por links</h1>
+
+	<ul>
+		<li>
+			<a href="../../mod03/desafios/013/desafio3.html" target="tela">Pagina 1</a>
+		</li>
+		<li>
+			<a href="../../mod03/desafios/012/index.html" target="tela">Pagina 2</a>
+		</li>
+		<li>
+			<a href="../../mod02/desafios/010/index.html" target="tela">Pagina 3</a>
+		</li>
+	</ul>
+
+
+	<iframe name="tela">
+		<p>NAVEGADOR NÃO SUPORTADO</p>
+	</iframe>
+
+</body>
+</html>
