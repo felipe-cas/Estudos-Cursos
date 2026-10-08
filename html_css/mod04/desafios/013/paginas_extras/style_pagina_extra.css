@@ -1,0 +1,30 @@
+@charset UTF-8;
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-family: Arial;
+}
+
+img{
+	width: 100vw;
+}
+
+a{
+	background-color: #F15152;
+	display: block;
+	
+	font-size: 10vw;
+	font-weight: bolder;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+
+	width: 100vw;
+	height: 5vh;
+
+	padding: 10% 0px;
+}
