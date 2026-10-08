@@ -7,10 +7,16 @@
 </head>
 <body>
 	<h1>O Tal do Formulario</h1>
-	<form>
-		<p>Nome: <input type="text" name="nome" id="nome"></p>
-		<p>Sobrenome: <input type="text" name="sobre" id="sobre"></p>
-		<input type="submit" name="enviar" value="enviar">
+	<form action="cadastro.php" autocomplete="off">
+		<p>
+			<label for="i_nome">NOME: </label>
+			<input type="text" name="nome" id="i_nome">
+		</p>
+		<p>
+			<label for="i_sobre">SOBRENOME: </label>
+			<input type="text" name="sobre" id="i_sobre">
+		</p>
+		<input type="submit" name="b_enviar" value="enviar">
 	</form>
 </body>
 </html>
