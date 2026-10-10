@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FORMULARIO 007</title>
+
+	<style>
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+
+		body{
+			padding: 15px;
+			width: 100vw;
+			height: 100vh;
+		}
+
+		label, select, datalist, input{
+			margin-bottom: 10px;
+		}
+
+		textarea{
+			resize: none;
+			width: 60vw;
+			height: 50vh;
+
+		}
+	</style>
+
+</head>
+<body>
+	<h1></h1>
+	<form>
+		<p>
+			<label for="_estados">ESTADOS: </label>
+			<select id="_estados">
+				<optgroup label="Sudeste">
+					<option value="SP">São Paulo</option>
+					<option value="RJ">Rio de Janeiro</option>
+					<option value="MS">Minas Gerais</option>
+				</optgroup>
+
+				<optgroup label="Nordeste">
+					<option value="MA">Maranhão</option>
+					<option value="PE">Pernanbuco</option>
+					<option value="RN">Rio Grande do Norte</option>
+				</optgroup>
+			</select>
+		</p>
+
+		<p>
+			<label for="_hat">COLOR HAT: </label>
+			<input type="text" name="hat" id="_hat" list="_lstHat">
+			<datalist id="_lstHat">
+				<optgroup label="FAMOSOS">
+					<option>BLACK</option>
+					<option>WHITE</option>
+				</optgroup>
+
+				<optgroup label="MEDIANOS">
+					<option>GRAY</option>
+					<option>RED</option>
+				</optgroup>
+
+				<optgroup label="MODINHA">
+					<option>BLUE</option>
+					<option>YELLOW</option>
+					<option>PURPLE</option>
+				</optgroup>
+			</datalist>
+		</p>
+
+		<p>
+			<label style="display: block;" for="_comment">PORQUE ESCOLHEU ESSE CHAPÉU?</label>
+			<textarea name="comment" id="_comment" placeholder="diga aqui..."></textarea>
+		</p>
+	</form>
+</html>
