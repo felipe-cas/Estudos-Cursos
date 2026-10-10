@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FORMULARIO 006</title>
+</head>
+<body>
+	<h1>COLOR, RANGE E FILE</h1>
+
+	<form method="POST" enctype="multipart/form-data">
+		<p>
+			<label for="_cor">COR: </label>
+			<input type="color" name="cor" id="_cor">
+		</p>
+
+		<p>
+			<label for="_nivel">RANGE: </label>
+			<input type="range" name="nivel" id="_nivel" min="0" max="20" step="5">
+		</p>
+
+		<p>
+			<label for="_file">FILE: </label>
+			<input type="file" name="file" id="_file">
+		</p>
+
+		<button type="submit" name="enviar" id="_enviar">Enviar</button>
+	</form>
+</body>
+</html>
