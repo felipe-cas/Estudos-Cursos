@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FORMULARIO 008</title>
+</head>
+<body>
+	<h1>OUTPUTS</h1>
+	<form>
+		<p>
+			<label>1° NUMERO: </label>
+			<input type="number" name="num1" id="_num1" oninput="_soma.innerHTML = Number(_num1.value) + Number(_num2.value)">
+		</p>
+
+		<p>
+			<label>2° NUMERO: </label>
+			<input type="number" name="num2" id="_num2" oninput="_soma.innerHTML = Number(_num1.value) + Number(_num2.value)">
+		</p>
+
+		<p>
+			<label for="soma">SOMA: </label>
+			<output id="_soma">0</output>
+		</p>
+
+		<p>
+			<label>SEU NUMERO DA SORTE: </label>
+			<input type="range" name="range" id="_range" min="0" max="10" value ="2" oninput="_oRange.innerHTML = Number(_range.value)">
+			<output id="_oRange">2</output>
+		</p>
+	</form>
+</body>
+</html>
