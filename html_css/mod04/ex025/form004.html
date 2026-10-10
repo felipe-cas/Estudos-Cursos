@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FORMULARIO 004</title>
+	<style>
+
+		fieldset{
+			text-align: center;
+		}
+
+		#benviar{
+			padding: 10px;
+			margin: 10px 0px;
+		}
+	</style>
+</head>
+<body>
+	<h1>TELEFONE E EMAIL</h1>
+	<form>
+		<fieldset>
+			<legend>DADOS PESSOAIS</legend>
+			<p>
+				<label for="inome">NOME: </label>
+				<input type="text" name="nome" id="inome">
+			</p>
+			<p>
+				<label for="iemail">EMAIL: </label>
+				<input type="email" name="email" id="iemail" required autocomplete="email">
+			</p>
+			<p>
+				<label for="itel">TELEFONE: </label>
+				<input type="tel" name="tel" id="itel">
+			</p>
+		</fieldset>
+		<input type="submit" name="enviar" id="benviar">
+	</form>
+</body>
+</html>
