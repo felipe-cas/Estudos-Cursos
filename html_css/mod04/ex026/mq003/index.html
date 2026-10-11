@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MEDIA QUERY 003</title>
+
+	<style>
+		/*CSS Principal*/
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+
+		html, body{
+			height: 100vh;
+			width: 100vw;
+			font-family: Arial;
+		}
+
+		body{
+			background-color: black;
+		}
+
+		h1{
+			color: white;
+			text-shadow: 2px 2px rgba(160, 160, 160, 0.8);
+		}
+
+		
+		/*CSS Retrato*/
+		@media screen and (orientation: portrait) {
+			body{
+				background-color: lightgreen;
+			}
+		}
+
+
+		/*CSS Paisagem*/
+		@media screen and (orientation: landscape) {
+			body{
+				background-color: lightblue;
+			}
+		}
+	</style>
+
+</head>
+<body>
+	<h1>MUDE A ORIENTAÇÃO DO SEU DISPOSITIVO</h1>
+</body>
+</html>
