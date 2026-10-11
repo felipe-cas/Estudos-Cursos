@@ -1,0 +1,8 @@
+@charset UTF-8;
+
+/*CSS Retrato*/
+
+body{
+	background: #233eff url(../../imagens/cev-portrait.jpg) no-repeat center bottom;
+	background-size: contain;
+}

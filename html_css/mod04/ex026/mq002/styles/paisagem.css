@@ -1,0 +1,8 @@
+@charset UTF-8;
+
+/*CSS Paisagem*/
+
+body{
+	background: #233eff url("../../imagens/cev-landscape.jpg") no-repeat center left;
+	background-size: contain;
+}
