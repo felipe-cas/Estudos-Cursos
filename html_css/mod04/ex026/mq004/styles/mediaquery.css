@@ -1,3 +1,84 @@
 @charset UTF-8;
 
 /*TODAS AS MIDIAS*/
+
+
+/*IMPRESSÃO*/
+@media print{
+	*{
+		font: normal normal Courier New, Courier, monospace;
+		color: black;
+	}
+
+	#print{
+		display: block;
+	}
+
+	main{
+		border: 2px solid black;
+		height: 90vh;
+	}
+
+	main h1{
+		text-shadow: none;
+	}
+
+	body::after{
+		content: "Arquivo impresso";
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	#phone{
+		display: block;
+	}
+}
+
+
+/*TABLETS*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+	body{
+		background: black url("../../imagens/back-tablet.jpg") no-repeat center center;
+		background-size: cover;
+	}
+
+	#tablet{
+		display: block;
+	}
+}
+
+
+/*LAPTOPS*/
+@media screen and (min-width: 992px) and (max-width: 1200px){
+	body{
+		background: black url("../../imagens/back-pc.jpg") no-repeat center center;
+		background-size: cover;
+
+		#pc{
+			display: block;
+		}
+	}
+}
+
+
+/*DESKTOP*/
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+	body{
+		background: black url("../../imagens/back-pc.jpg") no-repeat center center;
+		background-size: cover;
+
+		#pc{
+			display: block;
+		}
+	}
+}
+
+
+/*TELAS GRANDES*/
+@media screen and (min-width: 1400px){
+	body{
+		background: black url("../../imagens/back-tv.jpg") no-repeat center center;
+		background-size: cover;
+	}
+}
