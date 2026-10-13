@@ -20,7 +20,7 @@ header{
 }
 
 nav{
-	display: block;
+	display: none;
 	background-color: grey;
 	text-align: center;
 }
@@ -62,4 +62,18 @@ article p{
 	text-align: justify;
 	margin-bottom: 10px;
 	text-indent: 10px;
+}
+
+
+#_imenu{
+	display: block;
+	padding: 10px;
+
+	text-align: center;
+	transition: 0.25s;
+}
+
+#_imenu:hover{
+	background-color: gray;
+	color: white;
 }

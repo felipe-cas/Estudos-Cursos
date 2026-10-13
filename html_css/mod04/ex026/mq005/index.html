@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MEDIA QUERY 005</title>
 
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=menu&display=block" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 
 </head>
@@ -12,7 +13,10 @@
 	<header>
 		<h1>SITE</h1>
 	</header>
-	<nav>
+	<i id="_imenu" class="material-symbols-outlined" onclick="mostraMenu()">
+		menu
+	</i>
+	<nav id="menu">
 		<a href="#">Opção 1</a>
 		<a href="#">Opção 2</a>
 		<a href="#">Opção 3</a>
@@ -42,5 +46,16 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</article>
 	</main>
+
+	<script>
+		function mostraMenu() {
+			if (menu.style.display == 'block') {
+				menu.style.display = 'none'
+			} else {
+				menu.style.display = 'block'
+			}
+		}
+	</script>
+
 </body>
 </html>
