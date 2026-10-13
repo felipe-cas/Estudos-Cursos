@@ -6,17 +6,19 @@
 	<title>MEDIA QUERY 005</title>
 
 	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=menu&display=block" rel="stylesheet" />
+	
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/mediaquery.css">
 
 </head>
-<body>
+<body onresize="modouTamanho()">
 	<header>
 		<h1>SITE</h1>
 	</header>
 	<i id="_imenu" class="material-symbols-outlined" onclick="mostraMenu()">
 		menu
 	</i>
-	<nav id="menu">
+	<nav id="_menu_items">
 		<a href="#">Opção 1</a>
 		<a href="#">Opção 2</a>
 		<a href="#">Opção 3</a>
@@ -48,11 +50,20 @@
 	</main>
 
 	<script>
-		function mostraMenu() {
-			if (menu.style.display == 'block') {
-				menu.style.display = 'none'
+
+		function modouTamanho() {
+			if (window.innerWidth >= 992){
+				_menu_items.style.display = 'block'
 			} else {
-				menu.style.display = 'block'
+				_menu_items.style.display = 'none'
+			}
+		}
+
+		function mostraMenu() {
+			if (_menu_items.style.display == 'block') {
+				_menu_items.style.display = 'none'
+			} else {
+				_menu_items.style.display = 'block'
 			}
 		}
 	</script>

@@ -1,0 +1,49 @@
+@charset UTF-8;
+
+@media screen and (min-width: 992px){
+	
+	#_imenu{
+		display: none;
+	}
+
+	#_menu_items{
+		display: block;
+		padding: 10px;
+
+		text-align: left;
+	}
+
+	#_menu_items a{
+		display: inline;
+		background-color: lightgray;
+		color: gray;
+
+		font-weight: bolder;
+
+		padding: 5px 2vw;
+		margin: 0px 10px;
+		border: none;
+
+		transition: border-radius 0.3s ease;
+	}
+
+	#_menu_items a:hover{
+		background-color: darkgray;
+		color: lightgray;
+		border-radius: 20px 0px;
+		border: 1px solid darkgray;
+		
+	}
+
+	header{
+		background: gray;
+	}
+
+	header h1{
+		color: white;
+	}
+
+	main{
+		max-width: 900px;
+	}
+}
