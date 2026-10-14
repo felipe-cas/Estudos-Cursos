@@ -6,6 +6,7 @@
 	<title>PROJETO LOGIN</title>
 
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=person,key_vertical&display=inline" rel="stylesheet" />
 
 </head>
 <body>
@@ -19,15 +20,19 @@
 
 				<form>
 					<aside>
-						<label for="_email">Login</label>
-						<input type="text" name="email" id="_email">
+						<label for="_email">
+							<i class="material-symbols-outlined" id="_i_email">person</i>
+						</label>
+						<input type="email" name="email" id="_email" class="__input" placeholder="Seu email" required>
 					</aside>
 					<aside>
-						<label for="_senha">Senha</label>
-						<input type="password" name="senha" id="_senha">
+						<label for="_senha">
+							<i class="material-symbols-outlined" id="_i_senha">key_vertical</i>
+						</label>
+						<input type="password" name="senha" id="_senha" class="__input" placeholder="Sua senha" required minlength="8">
 					</aside>
-					<button id="_b_entrar">Entrar</button>
-					<button id="_b_forget">Esqueci a senha</button>
+					<button id="_b_entrar" class="__button">Entrar</button>
+					<button id="_b_forget" class="__button">Esqueci a senha</button>
 				</form>
 		</section>
 	</main>
