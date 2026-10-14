@@ -1,0 +1,43 @@
+@charset UTF-8;
+
+@media screen and (min-width: 576px){
+	body{
+		background-image: linear-gradient(135deg, var(--powder), var(--caramel));
+	}
+
+	main{
+		display: flex;
+		height: 75vh;
+		width: 	85vw;
+	}
+
+	#_img_login{
+		height: 100%;
+		width: 	40%;
+
+		border-radius: 5vw 0 0 5vw;
+	}
+
+	#_form_login{
+		height: 100%;
+		width:	60%;
+	}
+
+	#_form_login h1{
+		margin: 10px 0px;
+	}
+
+	#_form_login p{
+		font-size: 1em;
+		margin: 20px 15px;
+	}
+
+	#_form_login aside{
+		margin: 20px 15px;
+	}
+
+	.__button{
+		padding: 15px;
+		margin-top: 20px;
+	}
+}
