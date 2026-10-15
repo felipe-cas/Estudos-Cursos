@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
 
 :root{
+	--light-blush: #B6B0B3;
 	--blush:	#F2E9EE;
 	--onyx:		#0C0D0C;
 	--caramel:	#BF6836;
@@ -94,30 +95,44 @@ main section form{
 	margin: 0px 5%;
 }
 
-#_form_login aside{
-	background-color: var(--caramel);
 
-	height: 50px;
-	width: 	90%;
+
+.__fild{
+	width: 90%;
 	border-radius: 5px;
+	border-color: var(--powder);
+
+	transition: 0.2s ease;
 }
 
-#_form_login i{
-	padding: 5px;*/
+.__fild legend{
+	margin-left: 10px;
+	padding: 0px 4px;
+	color: var(--light-blush);
 }
 
-.__input{
-	background-color: var(--blush);
+.__fild input{
+	background-color: transparent;
+	width: 87%;
 
 	outline: none;
 	border: none;
-	border-radius: 6px;
-
-	height: 30px;
-	width: 84%;
 
 	text-indent: 10px;
 }
+
+.__fild input:focus{
+	outline: 0;
+}
+
+.__fild:focus-within{
+	border-color: var(--caramel);
+}
+
+.__icon_input{
+	color: var(--light-blush);
+}
+
 
 .__button{
 	font-weight: bold;
@@ -137,8 +152,4 @@ main section form{
 #_b_entrar:hover, #_b_forget:hover{
 	background-color: #BF6836B3;
 	border-radius: 5px;
-}
-
-#_senha:focus, #_email:focus{
-	border: 2px solid var(--powder);
 }
