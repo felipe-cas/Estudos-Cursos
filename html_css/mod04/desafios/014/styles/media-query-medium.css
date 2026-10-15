@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 576px){
 	body{
-		background-image: linear-gradient(135deg, var(--powder), var(--caramel));
+		background-image: linear-gradient(135deg, var(--powder) 40%, var(--caramel));
 	}
 
 	main{
@@ -11,7 +11,6 @@
 		width: 	85vw;
 
 		border-radius: 5vw 5vw 0 5vw;
-		transition: 0.5s;
 	}
 
 	#_img_login{

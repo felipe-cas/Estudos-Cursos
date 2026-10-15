@@ -1,0 +1,16 @@
+@charset UTF-8;
+
+@media screen and (min-width: 992px){
+	body{
+		background-image: linear-gradient(225deg, var(--powder) 40%, var(--caramel));
+	}
+
+	main{
+		flex-direction: row-reverse;
+		border-radius: 5vw 5vw 5vw 0;
+	}
+
+	#_img_login{
+		border-radius: 0 5vw 5vw 0;
+	}
+}
