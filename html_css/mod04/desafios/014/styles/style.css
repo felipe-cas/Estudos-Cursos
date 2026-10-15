@@ -113,7 +113,7 @@ main section form{
 
 .__fild input{
 	background-color: transparent;
-	width: 87%;
+	width: calc(100% - 50px);
 
 	outline: none;
 	border: none;
@@ -131,6 +131,7 @@ main section form{
 
 .__icon_input{
 	color: var(--light-blush);
+	padding: 10px;
 }
 
 
