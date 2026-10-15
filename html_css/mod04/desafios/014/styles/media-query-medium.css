@@ -6,7 +6,7 @@
 	}
 
 	main{
-		display: flex;
+		flex-direction: row;
 		height: 75vh;
 		width: 	85vw;
 
@@ -27,20 +27,16 @@
 	}
 
 	#_form_login h1{
+		font-size: 3.5em;
 		margin: 10px 0px;
 	}
 
 	#_form_login p{
 		font-size: 1em;
-		margin: 10px 15px;
-	}
-
-	#_form_login aside{
 		margin: 20px 15px;
 	}
 
 	.__button{
 		padding: 15px;
-		margin-top: 20px;
 	}
 }
