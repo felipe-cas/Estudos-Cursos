@@ -9,8 +9,4 @@
 		flex-direction: row-reverse;
 		border-radius: 5vw 5vw 5vw 0;
 	}
-
-	#_img_login{
-		border-radius: 0 5vw 5vw 0;
-	}
 }
