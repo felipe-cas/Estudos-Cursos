@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FEX 011</title>
+
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+
+			font-family: Arial;
+
+			box-sizing: border-box;
+		}
+
+		header{
+			background-color: darkgray;
+			height: 50px;
+		}
+
+		h1{
+			text-align: center;
+			padding: 10px;
+		}
+
+		nav{
+			display: flex;
+			justify-content: center;
+
+			padding:5px 0px;
+			border: 1px solid black;
+		}
+
+		.item{
+			background-color: orange;
+			padding: 30px;
+			margin: 0px 2px;
+			border-radius: 10px;
+		}
+
+		.item:hover{
+			background-color: lightyellow;
+			color: orange;
+			font-weight: bolder;
+		}
+
+		#nav_img{
+			flex: 1 4 100px;
+		}
+
+		#nav_opt{
+			flex: 4 1 100px;
+		}
+
+		#nav_soc{
+			flex: 2 2 100px;
+		}
+	</style>
+
+</head>
+<body>
+	<main>
+		<header>
+			<h1>Menu Grow e Shrink</h1>
+		</header>
+		<nav>
+			<div class="item" id="nav_img">IMAGEM</div>
+			<div class="item" id="nav_opt">OPÇÕES</div>
+			<div class="item" id="nav_soc">REDES</div>
+		</nav>
+	</main>
+</body>
+</html>
