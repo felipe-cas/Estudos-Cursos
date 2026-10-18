@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FLEX 010</title>
+
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+
+		main{
+			display: flex;
+			flex-flow: row nowrap;
+
+			background-color: lightgreen;
+		}
+
+		.item{
+			flex-shrink: 0;
+			flex-grow: 1;
+
+			background-color: lightskyblue;
+			padding: 20px;
+			border: 1px solid black;
+		}
+	</style>
+
+</head>
+<body>
+	<main>
+		<div class="item">A</div>
+		<div class="item">B</div>
+		<div class="item">C</div>
+		<div class="item">D</div>
+		<div class="item">E</div>
+		<div class="item">F</div>
+	</main>
+</body>
+</html>
