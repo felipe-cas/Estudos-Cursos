@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+*{
+	margin: 0px;
+	padding: 0px;
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.4em;
+
+	box-sizing: border-box;
+}
+
+html, body{
+	height: 100vh;
+	width: 100vw;
+}
+
+section{
+	padding: 10px 15px;
+	text-align: justify;
+}
+
+section h1{
+	margin-bottom: 10px;
+	font-size: 1.8em;
+}
+
+section h2{
+	margin-bottom: 10px;
+	font-size: 1.5em;
+}
+
+
+
+.__container{
+	background-color: darkgray;
+}
