@@ -32,7 +32,24 @@ section h2{
 }
 
 
+#_article1, #_article2{
+	display: flex;
+	flex-flow: row wrap;
 
-.__container{
-	background-color: darkgray;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#_article1{
+	flex-wrap: wrap-reverse;
+}
+
+#_article2 iframe{
+	flex: auto;
+}
+
+.__div_texto{
+ 	flex: 0 1 800px;
+ 	margin: 10px 0px;
+ 	margin-right: 10px;
 }
