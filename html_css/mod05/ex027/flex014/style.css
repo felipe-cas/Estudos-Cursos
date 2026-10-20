@@ -24,11 +24,13 @@ section{
 section h1{
 	margin-bottom: 10px;
 	font-size: 1.8em;
+	text-align: left;
 }
 
 section h2{
 	margin-bottom: 10px;
 	font-size: 1.5em;
+	text-align: left;
 }
 
 
@@ -44,12 +46,21 @@ section h2{
 	flex-wrap: wrap-reverse;
 }
 
+#_article1 img{
+	flex: 1 1 auto;
+	max-width: 350px;
+	margin: auto;
+}
+
 #_article2 iframe{
 	flex: auto;
+
+	max-width: 85vw;
+	min-width: 350px;
+	margin: auto;
 }
 
 .__div_texto{
- 	flex: 0 1 800px;
- 	margin: 10px 0px;
- 	margin-right: 10px;
+ 	flex: 1 1 700px;
+ 	margin: 10px 15px 10px 0px;
 }
