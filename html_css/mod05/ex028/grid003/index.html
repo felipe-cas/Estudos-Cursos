@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GRID 002</title>
+
+	<style>
+		.container{
+			border: 2px solid red;
+			display: grid;
+
+			grid-template-columns: 100px 100px 100px;
+			grid-template-rows: 100px 100px 100px;
+
+			grid-auto-rows: 100px;
+
+			gap: 10px;
+		}
+
+		.item{
+			border: 2px dashed black;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="item">A</div>
+		<div class="item">B</div>
+		<div class="item">C</div>
+		<div class="item">D</div>
+		<div class="item">E</div>
+		<div class="item">F</div>
+		<div class="item">G</div>
+		<div class="item">H</div>
+		<div class="item">I</div>
+		<div class="item">J</div>
+	</div>
+</body>
+</html>
