@@ -39,6 +39,9 @@ header{
   align-items: center;
   justify-content: center;
 
+  position: sticky;
+  top: 0;
+
   background-color: var(--destaque);
   padding: 10px;
 }
@@ -70,7 +73,7 @@ main{
   flex-flow: column nowrap;
   align-items: center;
 
-  grid-column: 2 / 3;
+  grid-column: 2;
 
   background-color: var(--fundo-card);
 
@@ -118,3 +121,38 @@ main{
   background: var(--destaque-inverso) url(../imagens/guanabara-perfil.jpg) no-repeat center center;
   background-size: cover;  
 }
+
+
+#_detalhes{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.art_class{
+  background-color: var(--fundo-card);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+
+  color: var(--destaque);
+
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.art_titulo{
+  display: flex;
+  gap: 0px 10px;
+
+  margin-bottom: 15px;
+}
+
+.art_video{
+  border-radius: 10px;
+  margin: auto;
+
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+
+/*ARTICLE VIDEO APRESENTAÇÃO*/
