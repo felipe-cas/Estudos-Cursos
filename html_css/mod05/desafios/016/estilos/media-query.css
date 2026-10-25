@@ -1,0 +1,10 @@
+@charset "UTF8";
+
+@media screen and (min-width: 768px){
+
+	/*ARTICLE MINHAS SKILLS*/
+
+	.skill_grid{
+  		grid-template-columns: 1fr 1fr;
+	}	
+}
