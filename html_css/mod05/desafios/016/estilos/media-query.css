@@ -2,6 +2,28 @@
 
 @media screen and (min-width: 768px){
 
+	main{
+		grid-template-columns: 1fr 30vw 65vw 1fr;
+		gap: 20px;
+	}
+
+	#_ficha{
+		grid-column: 2;
+		height: fit-content;
+
+		position: sticky;
+		top: 65px;
+	}
+
+	#_detalhes{
+		grid-column: 3;
+		grid-row: 1;
+	}
+
+	.art_video{
+		height: 400px;
+	}
+
 	/*ARTICLE MINHAS SKILLS*/
 
 	.skill_grid{

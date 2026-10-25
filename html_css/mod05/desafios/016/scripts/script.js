@@ -1,4 +1,4 @@
-const botao = document.getElementById('botao-tema');
+const botao = document.getElementById('botao_tema');
 const body = document.body;
 
 // Persistência do tema
@@ -9,10 +9,10 @@ temaEscuro(temasalvo === 'escuro');
 function temaEscuro(tipo) {
   if (tipo == true) {
     body.classList.add('escuro');
-    botao.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    botao.innerHTML = '<a href="#" id="botao_tema">dark_mode</a>';
   } else {
     body.classList.remove('escuro');
-    botao.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    botao.innerHTML = '<a href="#" id="botao_tema">light_mode</a>';
   }
 }
 
@@ -23,7 +23,7 @@ botao.addEventListener('click', () => {
 });
 
 // Scroll suave para links de navegação
-const navLinks = document.querySelectorAll('#menu ul a.link');
+const navLinks = document.querySelectorAll('#menu i a.link');
 navLinks.forEach(link => {
   link.addEventListener('click', function(e) {
     e.preventDefault();

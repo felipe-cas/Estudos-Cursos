@@ -44,6 +44,8 @@ header{
 
   background-color: var(--destaque);
   padding: 10px;
+
+  z-index: 1;
 }
 
 nav i a{
@@ -120,6 +122,8 @@ main{
 
   background: var(--destaque-inverso) url(../imagens/guanabara-perfil.jpg) no-repeat center center;
   background-size: cover;  
+
+  transition: .4s ease-out;
 }
 
 
@@ -154,6 +158,7 @@ main{
   margin: auto;
 
   width: 100%;
+  height: 20%;
   aspect-ratio: 16/9;
 }
 
@@ -322,9 +327,6 @@ footer{
   color: var(--texto-inverso);
 
   padding: 4px;
-
-  position: sticky;
-  bottom: 0px;
 }
 
 footer a{
