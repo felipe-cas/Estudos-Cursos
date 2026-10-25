@@ -193,3 +193,51 @@ main{
 }
 
 
+/*ARTICLE MINHAS FORMAÇÕES*/
+
+.forma_flex{
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  gap: 30px;
+}
+
+.formacao{
+  display: grid;
+  grid-template-columns: 1% 1fr;
+  height: 60px;
+
+  transition: .3s ease-out;
+}
+
+.forma_dados{
+  background-color: var(--fundo-principal);
+  border-radius: 0px 10px 10px 0px;
+
+  padding: 5px 15px;
+
+  line-height: 20px;
+  color: var(--texto);
+  font-weight: 500;
+  font-size: .9em;
+}
+
+.forma_local{
+  color: var(--destaque);
+}
+
+.forma_forma{
+  font-weight: normal;
+}
+
+.forma_detalhe{
+  background-color: var(--destaque-inverso);
+  border-radius: 10px 0px 0px 10px;
+}
+
+.formacao:hover{
+  grid-template-columns: 3% 1fr;
+}
+
+.formacao:hover .forma_detalhe{
+  background-color: var(--destaque);
+}
