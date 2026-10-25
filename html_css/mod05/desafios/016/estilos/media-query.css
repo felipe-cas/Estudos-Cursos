@@ -7,4 +7,19 @@
 	.skill_grid{
   		grid-template-columns: 1fr 1fr;
 	}	
+
+
+	/*ARTICLE MEUS PROJETOS*/
+	.projeto_dados{
+		flex-flow: row-reverse; nowrap;
+		justify-content: space-between;
+	}
+
+	.projeto_info{
+		flex-basis: 65%;
+	}
+
+	.projeto_img{
+		width: 30%;
+	}
 }
