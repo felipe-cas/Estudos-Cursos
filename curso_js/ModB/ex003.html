@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EX003</title>
+</head>
+<body>
+
+	<form autocomplete="None">
+		<label for="_nome">Digite um nome</label>
+		<input type="text" name="nome" id="_nome">
+		<button onclick="buttonFunc()">Clique</button>
+	</form>
+
+	<script>
+		function buttonFunc() {
+			var nome = document.getElementById("_nome").value
+			document.write(`Hola ${nome.toUpperCase()}!
+				Tu nombre tiene ${nome.length} letras`)
+		}
+	</script>
+
+</body>
+</html>
