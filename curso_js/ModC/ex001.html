@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EX001</title>
+
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+
+			box-sizing: border-box;
+
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		html, body{
+			height: 100vh;
+			width: 100vw;
+		}
+
+		body{
+			display: flex;
+			flex-flow: column nowrap;
+
+			justify-content: center;
+			align-items: center;
+
+			background-color: darkgray;
+		}
+
+		main{
+			display: flex;
+			flex-flow: column nowrap;
+
+			justify-content: space-around;
+			align-items: center;
+
+			background-color: ghostwhite;
+
+			height: 30vh;
+			width: 70vw;
+
+			border-radius: 20px;
+
+			box-shadow: 0px 0px 15px 10px rgba(0, 255, 158, .2);
+		}
+
+		main div{
+			display: flex;
+			align-items: center;
+
+			height: 40%;
+		}
+	</style>
+
+</head>
+<body>
+	<main>
+		<h1>TRABALHANDO COM DOM</h1>
+		<p>Primeiros passos com <strong>DOM</strong></p>
+
+		<div id="msg">
+			<p>clique um mim...</p>
+		</div>
+	</main>
+
+	<script>
+		var p1 = document.getElementById("msg")
+
+		p1.style.background = "rgba(0, 255, 158, 0.6)"
+		p1.innerHTML = "<p>Aguardando...</p>"
+		p1.style.borderRadius = "15px"
+		p1.style.padding = "5px"
+		
+	</script>
+
+</body>
+</html>
