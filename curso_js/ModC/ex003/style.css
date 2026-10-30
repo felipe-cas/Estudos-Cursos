@@ -97,9 +97,24 @@ main{
 	outline: none;
 }
 
-#_limpar{
-	align-self: flex-end;
+#_options{
+	display: flex;
 
+	justify-content: space-between;
+	align-items: center;
+}
+
+#_listOptions{
+	background-color: var(--lavander);	
+	color: var(--ashy);
+
+	border: 2px solid var(--grape);
+	border-radius: 10px;
+
+	padding: 10px;
+}
+
+#_limpar{
 	background-color: var(--lavander);
 	color: var(--ashy);
 	
