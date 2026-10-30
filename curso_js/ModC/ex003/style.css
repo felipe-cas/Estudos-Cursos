@@ -34,6 +34,9 @@ body{
 
 header{
 	text-align: center;
+
+	color: white;
+	text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 main{
@@ -42,6 +45,8 @@ main{
 	width: 	80vw;
 
 	border-radius: 20px;	
+
+	box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.2);
 }
 
 #_calc{
@@ -65,10 +70,50 @@ main{
 	height: 60%;
 }
 
+.field_input{
+	border: 2px solid var(--grape);
+	padding: 5px;
+
+	transition: 0.1s ease-out;
+}
+
+.field_input:focus-within{
+	border-color: var(--ashy);
+}
+
+.field_input legend{
+	color: var(--lavander);
+	margin-left: 10px;
+	padding: 0px 5px;
+}
+
+.field_input input{
+	width: 100%;
+	text-indent: 10px;
+	border: none;
+}
+
+.field_input input:focus{
+	outline: none;
+}
+
 #_limpar{
 	align-self: flex-end;
 
+	background-color: var(--lavander);
+	color: var(--ashy);
+	
+	border: 2px solid var(--grape);
+	border-radius: 10px;
+
 	padding: 10px;
+
+	transition: 0.1s ease-out;
+}
+
+#_limpar:hover{
+	background-color: var(--ashy);
+	color: var(--grape);
 }
 
 #_resultado{
@@ -77,8 +122,12 @@ main{
 	align-items: center;
 
 	background-color: darkgray;
+	color: white;
 
 	height: 40%;
 
 	border-radius: 20px;
+
+	font-size: 6em;
+	font-weight: bolder;
 }
