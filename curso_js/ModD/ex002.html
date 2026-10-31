@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EX002</title>
+
+	<style>
+		*{
+			margin:  0px;
+			padding: 0px;
+
+			font-family: arial, helvetica, sans-serif;
+
+			box-sizing: border-box;
+		}
+
+		html, body{
+			height: 100vh;
+			width: 	100vw;
+		}
+
+		body{
+			display: flex;
+			flex-flow: column nowrap;
+
+			align-items: center;
+		}
+
+		header{
+			display: flex;
+			flex-flow: column nowrap;
+
+			align-items: center;
+			justify-content: space-around;
+
+			height: 30%;
+
+			margin: 10px;
+		}
+
+		header h1{
+			font-size: 3em;
+			text-align: center;
+		}
+
+		main{
+			display: flex;
+			flex-flow: column nowrap;
+
+			justify-content: center;
+			align-items: center;
+
+			height: 50%;
+		}
+
+		form label{
+			display: block;
+			text-align: center;
+
+			padding: 5px;
+			font-size: 1.4em;
+		}
+
+		form input{
+			height: 30vh;
+			width: 40vw;
+		}
+
+		#_inputVel{
+			text-align: center;
+			font-size: 4em;
+		}
+
+		#_multa{
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+
+</head>
+<body>
+	<header>
+		<h1>RADAR DE VELOCIDADE</h1>
+		<p>Limite de velocidade na via é de 90 Km/H</p>
+		<p>Multa de R$2.00 por Km/H acima</p>
+	</header>
+	<main>
+		<form>
+			<label for="_inputVel">VELOCIMETRO</label>
+			<input type="text" name="Vel" id="_inputVel" oninput="verifVel()">
+		</form>
+		<div id="_multa">
+			<p>0</p>
+		</div>
+	</main>
+
+	<script>
+		function verifVel() {
+			let vel = Number(document.getElementById("_inputVel").value)
+			let res = document.querySelector("#_multa")
+
+			if (vel <= 90) {
+				// DENTRO DO LIMITE
+
+				res.style.color = "green"
+				res.innerHTML = "<p>Você esta dentro do limite de velocidade!</p>"
+			} else {
+				// FORA DO LIMITE
+
+				let multa = calcVel(vel).toLocaleString('pt-br', {style:'currency', currency:'BRL'})
+
+				res.style.color = "red"
+				res.innerHTML = `<p>Voce ultrapassou o limite de velocidade!</p><p style="color:black;">MULTA: ${multa}</p>`
+			}
+		}
+		function calcVel(vel) {
+			return vel * 2
+		}
+	</script>
+</body>
+</html>
