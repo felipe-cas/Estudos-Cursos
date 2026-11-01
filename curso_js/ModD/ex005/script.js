@@ -7,7 +7,7 @@ function verifDados() {
 
 	let idade = calcIdade(parseInt(anoNasc))
 
-	if (idade < 0 || idade > 200 || anoNasc == "") {
+	if (idade < 0 || idade > 200 || anoNasc.length == 0) {
 		alert("[ERRO] - Verifique os dados Preenchidos")
 
 	} else {

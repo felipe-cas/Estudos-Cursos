@@ -127,6 +127,8 @@ main form{
 
 	outline: 2px solid var(--blckGray);
 
+	appearance: textfield;
+
 	transition: .1s ease-out;
 }
 
