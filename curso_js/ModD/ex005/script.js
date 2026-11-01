@@ -2,12 +2,12 @@ const tituloSexo  = document.getElementById("_tituloSexo")
 const tituloIdade = document.getElementById("_tituloIdade") 
 
 function verifDados() {
-	let anoNasc = Number.parseInt(document.getElementById("_anoNasc").value)
+	let anoNasc = document.getElementById("_anoNasc").value
 	let tipSexo = document.querySelector('input[name="radioInput"]:checked')
 
-	let idade = calcIdade(anoNasc)
+	let idade = calcIdade(parseInt(anoNasc))
 
-	if (idade < 0 || idade > 200) {
+	if (idade < 0 || idade > 200 || anoNasc == "") {
 		alert("[ERRO] - Verifique os dados Preenchidos")
 
 	} else {
