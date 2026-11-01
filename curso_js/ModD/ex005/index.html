@@ -31,16 +31,19 @@
 	</section>
 	<main>
 		<form>
-			<input type="text" name="anoNasc" id="anoNasc">
-			<fieldset>
+			<input type="text" name="anoNasc" id="_anoNasc" placeholder="Ano de nascimento">
+			<fieldset id="_fieldSexo">
 				<legend>SEXO</legend>
-				<label for="_radioM">Masculino</label>
-				<input type="radio" name="radioInput" id="_radioM">
-
-				<label for="_radioF">Feminino</label>
-				<input type="radio" name="radioInput" id="_radioF">
+				<div>
+					<label for="_radioM">Masculino</label>
+					<input type="radio" name="radioInput" id="_radioM">
+				</div>
+				<div>
+					<label for="_radioF">Feminino</label>
+					<input type="radio" name="radioInput" id="_radioF">
+				</div>
 			</fieldset>
-			<button>Verificar</button>
+			<button id="_btVerif">Verificar</button>
 		</form>
 	</main>
 	<footer>
