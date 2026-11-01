@@ -15,8 +15,8 @@
 			<!-- FOTO -->
 		</div>
 		<div id="_dadosPessoa" class="divDados">
-			<h2>Homem</h2>
-			<h3>24 Anos</h3>
+			<h2 id="_tituloSexo">Homem</h2>
+			<h3 id="_tituloIdade">0 Anos</h3>
 		</div>
 		<div id="_descPessoa" class="divDados">
 			<p>
@@ -30,24 +30,25 @@
 		</div>
 	</section>
 	<main>
-		<form>
+		<form autocomplete="off">
 			<input type="text" name="anoNasc" id="_anoNasc" placeholder="Ano de nascimento">
 			<fieldset id="_fieldSexo">
 				<legend>SEXO</legend>
 				<div>
 					<label for="_radioM">Masculino</label>
-					<input type="radio" name="radioInput" id="_radioM">
+					<input type="radio" name="radioInput" id="_radioM" value="Masc" checked>
 				</div>
 				<div>
 					<label for="_radioF">Feminino</label>
-					<input type="radio" name="radioInput" id="_radioF">
+					<input type="radio" name="radioInput" id="_radioF" value="Femi">
 				</div>
 			</fieldset>
-			<button id="_btVerif">Verificar</button>
 		</form>
+		<button id="_btVerif" onclick="verifDados()">Verificar</button>
 	</main>
 	<footer>
 		<p>Made by Me... :)</p>
 	</footer>
+	<script src="script.js"></script>
 </body>
 </html>
