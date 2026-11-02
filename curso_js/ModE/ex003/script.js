@@ -7,14 +7,55 @@ function calcRes() {
 
 	let string = ""
 
-	for (inicio; inicio <= fim; inicio += passo) {
-		if (inicio >= fim) {
-			string += inicio
-		} else {
-			string += `${inicio} > `
+	let aux = valid(inicio, fim, passo)
+
+	if (aux) {
+		for (inicio; inicio <= fim; inicio += passo) {
+			if (inicio >= fim) {
+				string += inicio
+			} else {
+				string += `${inicio} > `
+			}
+
 		}
 
+		resu.innerText = string
+	}
+}
+
+function btnLimpar() {
+	let entradas = document.querySelectorAll(".inputNum")
+
+	for (let i = 0; i != 3; i++) {
+		entradas[i].value = ""
 	}
 
-	resu.innerText = string
+	resu.innerText = "Aguardando entradas para a contagem..."
+}
+
+function valid(inicio, fim, passo) {
+	let msg = ""
+	let aux = false
+
+	if (inicio.toString() == "NaN" || fim.toString() == "NaN" || passo.toString() == "NaN") {
+		msg = "[ERRO] - Nenhum campo pode ficar vazio"
+
+	} else if (inicio > fim && passo > 0) {
+		msg = "[ERRO] - Inicio maior que o fim, passo deve ser negativo"
+
+	} else if (inicio < fim && passo < 0) {
+		msg = "[ERRO] - Inicio menor que o fim, passo deve ser positivo"
+
+	} else if (passo == 0) {
+		msg = "[ERRO] - Passo igual a 0"
+
+	} else {
+		aux = true
+	}
+
+	if (!aux) {
+		alert(msg)
+	}
+
+	return aux
 }
