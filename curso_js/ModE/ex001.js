@@ -38,3 +38,7 @@ do {
 } while (num-- > 1)
 
 console.log(string)
+
+for (var i; i++; i < 10) {
+	console.log("teste")
+}
