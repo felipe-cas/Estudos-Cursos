@@ -10,16 +10,19 @@ function calcRes() {
 	let aux = valid(inicio, fim, passo)
 
 	if (aux) {
-		for (inicio; inicio <= fim; inicio += passo) {
-			if (inicio >= fim) {
-				string += inicio
-			} else {
+
+		if (passo > 0) {
+			for (inicio; inicio <= fim; inicio += passo) {
 				string += `${inicio} > `
 			}
-
+			
+		} else {
+			for (inicio; inicio >= fim; inicio += passo) {
+				string += `${inicio} > `
+			}
 		}
 
-		resu.innerText = string
+		resu.innerText = string += "FIM"
 	}
 }
 
