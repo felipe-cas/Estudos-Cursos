@@ -84,10 +84,14 @@ main{
 }
 
 #_tabuada ul{
-	display: grid;
+	display: none;
 	grid-template-columns: 1fr 1fr;
 	
 	column-gap: 50px;
 
 	list-style-type: none;
+}
+
+#_tabuada ul li{
+	padding: 0px 5px;
 }
