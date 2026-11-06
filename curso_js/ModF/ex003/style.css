@@ -1,5 +1,13 @@
 @charset "UTF8";
 
+:root{
+	--drew: #DDF8E8;
+	--dust: #CDD5D1;
+	--lila: #B4A6AB;
+	--mauv: #946E83;
+	--taup: #615055;
+}
+
 *{
 	margin:  0px;
 	padding: 0px;
@@ -19,19 +27,34 @@ body{
 
 	justify-items: center;
 	align-items: center;
+
+	background-image: linear-gradient(135deg, var(--taup) 35%, black);
+}
+
+header, footer{
+	color: white;
 }
 
 main{
 	display: grid;
-	grid-template-columns: 5fr 2fr;
+	grid-template-columns: 5fr 0%;
 
 	height: 90%;
 	width: 90%;
 
-	background-color: red;
+	border: 2px solid var(--dust);
+	border-radius: 20px;
+
+	background-color: var(--mauv);
+	box-shadow: 0px 0px 10px var(--mauv);
+
+	overflow: hidden;
+	transition: .4s ease;
 }
 
 
+
+/* CONFIGURAÇÃO DIV PRINCIPAL E RESULTADO */
 #_sectionPrincipal{
 	display: grid;
 	grid-template-rows: 1fr 5fr 1fr;
@@ -39,9 +62,15 @@ main{
 	justify-items: center;
 	align-items: center;
 
-	background-color: green;
+	background-color: rgba(230, 230, 230, .1);
+	box-shadow: 1px 0px 8px rgba(0, 0, 0, .1);
+
+	border-radius: 20px;
 }
 
+
+
+/* DIV PARA ENTRADA DE NUMERO */
 #_divEntrada{
 	display: flex;
 
@@ -56,10 +85,53 @@ main{
 	width: 90%;
 	height: 50%;
 
+	border-radius: 10px;
+	border: none;
+	outline: none;
+
 	text-align: center;
 	appearance: textfield;
+
+	transition: .4s ease;
 }
 
+#_numero:focus{
+	outline: none;
+	box-shadow: 0px 0px 8px var(--drew);
+}
+
+
+
+/* DIV PARA O ARRAY */
+#_divArray{
+	display: flex;
+	flex-wrap: wrap;
+
+	justify-content: center;
+	align-content: flex-start;
+
+	height: 90%;
+	width:  60%;	
+}
+
+#_divArray p{
+	padding: 5px;
+	margin:  4px;
+
+	background-color: white;
+
+	border-radius: 5px;
+}
+
+#_divArray p:hover{
+	background-color: rgb(240, 240, 240);
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
+	cursor: pointer;
+}
+
+
+
+/* DIV PARA OS BOTÕES */
 #_divBotoes{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -74,4 +146,42 @@ main{
 .btnClass{
 	height: 60%;
 	width:  70%;
+
+	background-color: white;
+	border-radius: 12px;
+	border: none;
+}
+
+.btnClass:hover{
+	background-color: rgb(240, 240, 240);
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
+}
+
+
+
+/* DIV DE RESULTADOS */
+#_sectionResultados{
+	display: grid;
+	grid-template-rows: 1fr repeat(5, 2fr);
+
+	justify-items: center;
+	align-items: center;
+}
+
+#_sectionResultados h2{
+	color: white;
+}
+
+.divRes{
+	height: 85%;
+	width:  80%;
+	padding-top: 5px;
+
+	text-align: center;
+	font-size: .8em;
+
+	background-color: white;
+
+	border-radius: 15px;
+	overflow: auto;
 }
