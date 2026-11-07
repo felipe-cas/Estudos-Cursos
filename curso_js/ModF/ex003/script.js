@@ -1,6 +1,9 @@
-const entradaNumero = document.getElementById("_numero")
-const arrayNums  = document.getElementById("_divArray")
-const btnExcluir = document.getElementById("_btnExcluir")
+const entradaNumero  = document.getElementById("_numero")
+const arrayNums		 = document.getElementById("_divArray")
+
+const btnExcluir  = document.getElementById("_btnExcluir")
+const btnConcluir = document.getElementById("_btnConcluir")
+
 const array = []
 
 var   pAnterior = ""
@@ -34,7 +37,7 @@ function addNumeroHtml(num) {
 	elemento.textContent = num
 	elemento.id = `_p${aux}`
 
-	elemento.addEventListener("click", () => selectNumP(elemento.textContent, elemento.id))
+	elemento.addEventListener("click", () => selectNumP(elemento.id))
 
 	arrayNums.appendChild(elemento)
 	++aux
@@ -57,10 +60,12 @@ function btnLimpar() {
 
 	pAnterior = ""
 	aux = 0
+
+	btnConcluir.classList.remove("btnDisable")
 }
 
 
-function btnConcluir() {
+function mostrarResultados() {
 	let divResultado = document.querySelector("#_sectionResultados")
 	let divMain = document.querySelector("main")
 	
@@ -68,10 +73,12 @@ function btnConcluir() {
 	divResultado.style.visibility = "visible"
 	divMain.style.gridTemplateColumns = "5fr 30%"
 
+	btnConcluir.classList.add("btnDisable")
+
 }
 
 
-function selectNumP(num, loc) {
+function selectNumP(loc) {
 	let pNum = document.getElementById(loc)
 
 	if (pAnterior == "") {
@@ -89,11 +96,27 @@ function selectNumP(num, loc) {
 }
 
 
+function excluirElementoNum() {
+	let activeElem = document.querySelector(".pNumActive")
+	let pos = array.indexOf(parseInt(activeElem.textContent))
+
+	if (pos != -1) {
+		array.splice(pos, 1)
+		arrayNums.removeChild(activeElem)
+		pAnterior = ""
+
+	} else {
+		alert("[ERRO] Não foi possivel remover o elemento do Array")
+	}
+}
+
+
 function ativaBtnExcluir() {
 	let btnExcluir = document.getElementById("_btnExcluir")
 	btnExcluir.style.visibility = "visible"
 	btnExcluir.style.opacity = "1"
 }
+
 
 function desativaBtnExcluir() {
 	let btnExcluir = document.getElementById("_btnExcluir")
@@ -101,9 +124,11 @@ function desativaBtnExcluir() {
 	btnExcluir.style.opacity = "0"
 }
 
+
 document.addEventListener("click", (event) => {
   if (!arrayNums.contains(event.target)) {
     let activeElem = document.querySelector(".pNumActive")
+    if (activeElem != null)
 		activeElem.classList.remove("pNumActive")
 		pAnterior = ""
 		desativaBtnExcluir()
