@@ -21,6 +21,8 @@ entradaNumero.addEventListener("keydown", function(event) {
 		} else if (Number.isNaN(num)){
 			alert("[ERRO] Entrada Invalida!")
 
+		} else if (num < 0 || num > 100) {
+			alert("[ERRO] Entrada fora do intervalo")
 		} else {
 			array.push(num)
 			addNumeroHtml(num)
@@ -157,7 +159,7 @@ function calcValores() {
 		array[array.length - 1],
 		array[0],
 		somaElementos,
-		mediaElementos
+		mediaElementos.toFixed(2)
 	]
 
 	elementosResultados = document.querySelectorAll(".divRes p")
