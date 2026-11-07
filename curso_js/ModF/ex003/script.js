@@ -1,5 +1,7 @@
 const entradaNumero  = document.getElementById("_numero")
 const arrayNums		 = document.getElementById("_divArray")
+const divResultado = document.querySelector("#_sectionResultados")
+const divMain = document.querySelector("main")
 
 const btnExcluir  = document.getElementById("_btnExcluir")
 const btnConcluir = document.getElementById("_btnConcluir")
@@ -33,6 +35,8 @@ entradaNumero.addEventListener("keydown", function(event) {
 	}
 })
 
+entradaNumero.addEventListener("focus", fecharResultados)
+
 
 function addNumeroHtml(num) {
 	let elemento = document.createElement("p")
@@ -49,8 +53,6 @@ function addNumeroHtml(num) {
 
 function btnLimpar() {
 	let qtdNums = arrayNums.childElementCount
-	let divResultado = document.querySelector("#_sectionResultados")
-	let divMain = document.querySelector("main")
 
 	for (qtdNums; qtdNums != 0; qtdNums--) {
 		arrayNums.removeChild(arrayNums.children[qtdNums - 1])
@@ -80,7 +82,6 @@ function mostrarResultados() {
 		divResultado.style.visibility = "visible"
 		divMain.style.gridTemplateColumns = "5fr 30%"
 
-		arrayNums.style.pointerEvents = "none"
 		btnConcluir.classList.add("btnDisable")
 		calcValores()
 
@@ -89,6 +90,16 @@ function mostrarResultados() {
 
 	}
 
+}
+
+
+function fecharResultados() {
+	divResultado.style.opacity = "0"
+	divResultado.style.visibility = "hidden"
+	divMain.style.gridTemplateColumns = "5fr 0%"
+
+	btnConcluir.classList.remove("btnDisable")
+	arrayNums.style.pointerEvents = ""
 }
 
 
@@ -106,6 +117,7 @@ function selectNumP(loc) {
 	}
 
 	pNum.classList.add("pNumActive")
+	fecharResultados()
 	ativaBtnExcluir()
 }
 
@@ -150,7 +162,7 @@ document.addEventListener("click", (event) => {
 })
 
 function calcValores() {
-	array.sort()
+	array.sort(function(a, b) {return a - b})
 	let somaElementos   = somarArray()
 	let mediaElementos	= somaElementos / array.length
 
