@@ -10,6 +10,7 @@ var   pAnterior = ""
 var   aux	= 0
 var   pos 	= 0
 
+
 entradaNumero.addEventListener("keydown", function(event) {
 	if (event.key === "Enter") {
 		let num = parseInt(document.getElementById("_numero").value)
@@ -60,20 +61,31 @@ function btnLimpar() {
 
 	pAnterior = ""
 	aux = 0
+	maiorValor = 0
+	menorValor = 0
 
 	btnConcluir.classList.remove("btnDisable")
+	arrayNums.style.pointerEvents = ""
 }
 
 
 function mostrarResultados() {
-	let divResultado = document.querySelector("#_sectionResultados")
-	let divMain = document.querySelector("main")
-	
-	divResultado.style.opacity = "1"
-	divResultado.style.visibility = "visible"
-	divMain.style.gridTemplateColumns = "5fr 30%"
+	if (array.length != 0) {
+		let divResultado = document.querySelector("#_sectionResultados")
+		let divMain = document.querySelector("main")
+		
+		divResultado.style.opacity = "1"
+		divResultado.style.visibility = "visible"
+		divMain.style.gridTemplateColumns = "5fr 30%"
 
-	btnConcluir.classList.add("btnDisable")
+		arrayNums.style.pointerEvents = "none"
+		btnConcluir.classList.add("btnDisable")
+		calcValores()
+
+	} else {
+		alert("[ERRO] Nenhum valor inserido")
+
+	}
 
 }
 
@@ -134,3 +146,32 @@ document.addEventListener("click", (event) => {
 		desativaBtnExcluir()
   }
 })
+
+function calcValores() {
+	array.sort()
+	let somaElementos   = somarArray()
+	let mediaElementos	= somaElementos / array.length
+
+	let resultados = [
+		array.length,
+		array[array.length - 1],
+		array[0],
+		somaElementos,
+		mediaElementos
+	]
+
+	elementosResultados = document.querySelectorAll(".divRes p")
+	for (let i = 0; i < elementosResultados.length; i++) {
+		elementosResultados[i].textContent = resultados[i]
+	}
+}
+
+
+function somarArray() {
+	let res = 0
+	for (let i = 0; i < array.length; i++) {
+		res += array[i]
+	}
+
+	return res
+}
