@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+	padding: 0px;
+	margin:  0px;
+
+	font-family: arial, helvetica, sans-serif;
+	box-sizing: border-box;
+}
+
+html, body{
+	height: 100vh;
+	width:  100vw;
+}
+
+body{
+	display: grid;
+	grid-template-rows: 1fr 8fr;
+}
+
+header{
+	justify-self: center;
+	padding: 20px;
+
+	font-size: 2em;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LOGIN</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/style_div_principal.css">
+
+	<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&icon_names=arrow_left_alt,arrow_right_alt" />-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right_alt,arrow_left_alt" />
+</head>
+<body>
+	<header>
+		<h1 id="_titulo">TITULO</h1>
+	</header>
+	<main>
+		<div class="divPrincipal">
+			<!--SECTION HOVER CADASTRO-->
+			<section id="_sectionTenhoCadastro" class="sectionHover">
+				<i class="material-symbols-outlined setas" style="font-size: 3em;">arrow_left_alt</i>
+				<p>Já tenho Cadastro...</p>
+			</section>
+
+			<!--SECTION PRINCIPAL LOGIN-->
+			<section id="_sectionLogin" class="sectionPrincipal">
+				<h2>Login</h2>
+				<form class="formSection">
+					<fieldset>
+						<legend>
+							<label for="_inputUserLogin">USUARIO</label>
+						</legend>
+						<input type="text" name="inputUserLogin" id="_inputUserLogin" class="inputStyle">
+					</fieldset>
+					<fieldset>
+						<legend>
+							<label for="_inputPassLogin">SENHA</label>
+						</legend>
+						<input type="password" name="inputPassLogin" id="_inputPassLogin" class="inputStyle">
+					</fieldset>
+					<button type="submit" id="_btnLogin">Entrar</button>
+					<a href="#" id="_linkEsqueciSenha">Esqueci minha senha...</a>
+				</form>
+			</section>
+
+			<!--SECTION PRINCIPAL CADASTRO-->
+			<section id="_sectionCadastro" class="sectionPrincipal">
+				<h2>Cadastro</h2>
+				<form class="formSection">
+					<fieldset>
+						<legend>
+							<label for="_inputEmailCadastro">EMAIL</label>
+						</legend>
+						<input type="mail" name="inputEmailCadastro" id="_inputEmailCadastro" class="inputStyle">
+					</fieldset>
+					<fieldset>
+						<legend>
+							<label for="_inputNomeCadastro">NOME</label>
+						</legend>
+						<input type="text" name="inputNomeCadastro" id="_inputNomeCadastro" class="inputStyle">
+					</fieldset>
+					<fieldset>
+						<legend>
+							<label for="_inputPass1Cadastro">SENHA</label>
+						</legend>
+						<input type="password" name="inputPass1Cadastro" id="_inputPass1Cadastro" class="inputStyle">
+					</fieldset>
+					<fieldset>
+						<legend>
+							<label for="_inputPass2Cadastro">CONFIRMA SENHA</label>
+						</legend>
+						<input type="password" name="inputPass2Cadastro" id="_inputPass2Cadastro" class="inputStyle">
+					</fieldset>
+					<button type="submit" id="_btnCadastrar">Cadastrar</button>
+				</form>
+			</section>
+
+			<!--SECTION HOVER LOGIN-->
+			<section id="_sectionNaoTenhoCadastro" class="sectionHover">
+				<i class="material-symbols-outlined setas" style="font-size: 3em;">arrow_right_alt</i>
+				<p>Não tenho Cadastro...</p>
+			</section>
+
+		</div>
+	</main>
+	<script src="menu_interativo.js"></script>
+</body>
+</html>
