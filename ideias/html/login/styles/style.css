@@ -1,5 +1,20 @@
 @charset "UTF-8";
 
+:root{
+	--futurLight0: #D7F271;
+	--futurLight1: #B5CC5F;
+	--futurLight2: #889947;
+
+	--futurLight3: #60F2F2;
+	--futurLight4: #51CCCC;
+	--futurLight5: #42A6A6;
+
+	--futurLight6: #333333;
+	--futurLight7: #262626;
+	--futurLight8: #1C1C1C;
+	--futurLight9: #0F0F0F;  
+}
+
 *{
 	padding: 0px;
 	margin:  0px;
