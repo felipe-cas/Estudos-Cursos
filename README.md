@@ -14,16 +14,16 @@
 <div align="center">
 	<br>
 	<h1>> ESTUDOS INCLUSOS <</h1>
-	<a href="https://github.com/felipe-cas/Estudos-Cursos/tree/main/html_css" target="_blank">
+	<a href="https://github.com/felipe-cas/Estudos-Cursos/tree/main/html_css">
 		<img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML5" width="70" height="70"></a>
-	<a href="https://github.com/felipe-cas/Estudos-Cursos/tree/main/html_css" target="_blank">
-		<img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JAVASCRIPT" alt="JavaScript" width="70" height="70"></a>
-		<a href="https://github.com/felipe-cas/Estudos-Cursos/tree/main/curso_js" target="_blank">
+	<a href="https://github.com/felipe-cas/Estudos-Cursos/tree/main/html_css">
 		<img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" title="CSS3" alt="CSS3" width="70" height="70"></a>
-	<a href="https://github.com/felipe-cas/Estudos-Cursos/tree/main/curso_c" target="_blank">
+		<a href="https://github.com/felipe-cas/Estudos-Cursos/tree/main/curso_js">
+		<img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JAVASCRIPT" alt="JAVASCRIPT" width="70" height="70"></a>
+	<a href="https://github.com/felipe-cas/Estudos-Cursos/tree/main/curso_c">
 		<img src="https://github.com/devicons/devicon/blob/master/icons/c/c-original.svg" title="C" alt="C" width="70" height="70"></a>
-	<a href="https://github.com/felipe-cas/Estudos-Cursos/tree/main/curso_java" target="_blank">
+	<a href="https://github.com/felipe-cas/Estudos-Cursos/tree/main/curso_java">
 		<img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original.svg" title="JAVA" alt="JAVA" width="70" height="70"></a>
-	<a href="https://github.com/felipe-cas/Estudos-Cursos/tree/main/malwares" target="_blank">
+	<a href="https://github.com/felipe-cas/Estudos-Cursos/tree/main/malwares">
 		<img src="https://cdn-icons-png.flaticon.com/512/10098/10098868.png" title="MALWARES" alt="MALWARES" width="70" height="70"></a>
 </div>
