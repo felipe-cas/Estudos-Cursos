@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EX006</title>
+	<style>
+		*{
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			box-sizing: border-box;
+		}
+
+		html, body{
+			height: 100vh;
+			width:  100vw;
+		}
+
+		body{
+			display: grid;
+			grid-template-rows: 3fr 5fr 2fr;
+			gap: 10px;
+
+			padding: 10px;
+		}
+
+		header{
+			display: flex;
+
+			justify-content: center;
+			align-content: center;
+		}
+
+		main{
+			display: flex;
+			
+			justify-content: center;
+			align-items: center;
+		}
+
+		main form{
+			height: 100%;
+			width: 60%;
+
+			display: grid;
+			grid-template-rows: 1fr 2fr 1fr 2fr 5fr;
+			gap: 20px;
+		}
+
+		main form input{
+			font-size: 1em;
+			text-indent: 20px;
+
+			border-radius: 5px;
+			border: 1px solid darkgray;
+			outline: none;
+		}
+
+		main form input:focus{
+			border-color: lightgreen;
+		}
+
+		main form button{
+			align-self: flex-end;
+			margin: auto;
+
+			height: 30%;
+			width: 60%;
+		}
+
+		main form button{
+			background-color: transparent;
+			border-radius: 5px;
+			border: 1px solid darkgray;
+		}
+
+		main form button:hover{
+			background-color: lightgray;
+		}
+
+		main form button:active{
+			background-color: lightgreen;
+		}
+
+		footer{
+			display: flex;
+
+			justify-content: center;
+			align-items: flex-end;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Login</h1>
+	</header>
+	<main>
+		<form method="GET" action="cad.php">
+			<label for="_nome">Nome: </label>
+			<input type="text" name="nome" id="_nome">
+
+			<label for="_sobrenome">Sobrenome: </label>
+			<input type="text" name="sobrenome" id="_sobrenome">
+
+			<button type="submit">Enviar</button>
+		</form>
+	</main>
+	<footer>
+		<p>Made by me...</p>
+	</footer>
+</body>
+</html>
