@@ -1,18 +1,21 @@
 @charset "UTF-8";
 
 :root{
-	--futurLight0: #D7F271;
-	--futurLight1: #B5CC5F;
-	--futurLight2: #889947;
+	--futurLight3: #D7F271;
+	--futurLight4: #B5CC5F;
+	--futurLight5: #889947;
 
-	--futurLight3: #60F2F2;
-	--futurLight4: #51CCCC;
-	--futurLight5: #42A6A6;
+	--futurLight0: #60F2F2;
+	--futurLight1: #51CCCC;
+	--futurLight2: #42A6A6;
 
 	--futurLight6: #333333;
 	--futurLight7: #262626;
 	--futurLight8: #1C1C1C;
 	--futurLight9: #0F0F0F;  
+
+	--maskDark:	 rgba(0, 0, 0, 0.2);
+	--maskLight: rgba(255, 255, 255, 0.2);
 }
 
 *{
@@ -31,12 +34,19 @@ html, body{
 body{
 	display: grid;
 	grid-template-rows: 1fr 8fr;
+
+	background-image: linear-gradient(177deg,
+		var(--futurLight7),
+		var(--futurLight8),
+		var(--futurLight9));
 }
 
 header{
 	justify-self: center;
 	padding: 20px;
 
+	color: var(--futurLight3);
+	text-shadow: 2px 2px 5px #D7F2714D;
 	font-size: 2em;
 }
 

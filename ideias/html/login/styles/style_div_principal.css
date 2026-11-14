@@ -4,12 +4,17 @@
 	display: grid;
 	grid-template-columns: 5fr 0.2fr;
 
+	background-color: var(--maskLight);
+	color: white;
+
 	height: 85%;
 	width:  80%;
-	background-color: red;
 
+	border: 2px solid var(--futurLight3);
 	border-radius: 30px;
 	overflow: hidden;
+
+	box-shadow: 0px 0px 10px #D7F2714d;
 
 	transition: .4s ease;
 }
@@ -19,12 +24,10 @@
 /* SECTIONS PRINCIPAIS */
 #_sectionLogin{
 	display: grid;
-	background-color: green;
 }
 
 #_sectionCadastro{
 	display: none;
-	background-color: yellow;
 }
 
 
@@ -40,8 +43,10 @@
 
 .sectionHover{
 	display: grid;
-	grid-template-rows: 1.2fr 1fr;
+	grid-template-rows: .9fr auto 1fr;
 	gap: 10px;
+
+	background-color: var(--maskDark);
 
 	transition: .4s ease;
 }
@@ -51,6 +56,8 @@
 	
 	justify-content: center;
 	align-items: flex-end;
+
+	transition: .4s ease-in;
 }
 
 .sectionHover p{
@@ -66,7 +73,11 @@
 }
 
 .sectionHover:hover p{
-	transition: 1.4s ease;
+	transition: 1.4s ease, color .2s ease;
+}
+
+.sectionHover:hover i{
+	color: var(--futurLight4);
 }
 
 
@@ -80,7 +91,6 @@
 
 	padding: 0px 20px 10px 20px;
 
-	background-color: green;
 }
 
 .sectionPrincipal h2{
@@ -88,8 +98,6 @@
 	align-self: center;
 
 	font-size: 2.5em;
-
-	background-color: red;
 }
 
 
@@ -101,8 +109,6 @@
 
 	justify-content: space-around;
 	align-items: center;
-
-	background-color: lightblue;
 }
 
 
@@ -113,11 +119,21 @@
 	width:  70%;
 
 	border-radius: 10px;
+	transition: .3s ease;
 }
 
 .formSection legend{
 	padding: 0px 5px;
 	margin: 0px 10px;
+	color: lightgray;
+}
+
+.formSection fieldset:hover{
+	border-color: var(--futurLight3);
+}
+
+.formSection fieldset:has(.inputStyle:focus){
+	border-color: var(--futurLight4);
 }
 
 .inputStyle{
@@ -128,6 +144,8 @@
 	font-size: 1em;
 
 	background-color: transparent;
+	color: ghostwhite;
+
 	outline: none;
 	border: none;
 }
@@ -142,10 +160,23 @@ button{
 	font-size: 1em;
 
 	background-color: transparent;
+	color: lightgray;
 
 	outline: none;
-	border: 2px solid black;
+	border: 2px solid lightgray;
 	border-radius: 8px;
+
+	transition: .3s ease;
+}
+
+button:hover{
+	border-color: var(--futurLight3);
+	color: var(--futurLight4);
+}
+
+button:active{
+	border-color: var(--futurLight5);
+	color: var(--futurLight3);
 }
 
 
@@ -154,8 +185,35 @@ button{
 #_linkEsqueciSenha{
 	font-size: .8em;
 	text-decoration: none;
+	color: lightgray;
+
+	transition: .3s ease;
+}
+
+#_linkEsqueciSenha:hover{
+	color: var(--futurLight3);
+}
+
+#_linkEsqueciSenha:active{
+	color: var(--futurLight5);
 }
 
 
-
 /* SETAS */
+.sectionHover i:hover{
+	transition: color .2s ease;
+	color: var(--futurLight3);
+}
+
+.sectionHover i:active{
+	transition: color 0s;
+	color: var(--futurLight5);
+}
+
+.sectionHover i:hover + p{
+	color: var(--futurLight4);
+}
+
+.sectionHover i:active + p{
+	color: var(--futurLight5);
+}
