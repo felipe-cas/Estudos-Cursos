@@ -48,6 +48,7 @@ header{
 	color: var(--futurLight3);
 	text-shadow: 2px 2px 5px #D7F2714D;
 	font-size: 2em;
+	cursor: default;
 }
 
 main{

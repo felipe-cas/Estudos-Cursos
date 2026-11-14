@@ -70,6 +70,7 @@
 	opacity: 0;
 
 	font-size: .8em;
+	cursor: default;
 }
 
 .sectionHover:hover p{
@@ -98,6 +99,7 @@
 	align-self: center;
 
 	font-size: 2.5em;
+	cursor: default;
 }
 
 
