@@ -77,7 +77,7 @@
 }
 
 .sectionHover:hover i{
-	color: var(--futurLight4);
+	color: var(--futurLight5);
 }
 
 
@@ -172,6 +172,7 @@ button{
 button:hover{
 	border-color: var(--futurLight3);
 	color: var(--futurLight4);
+	cursor: pointer;
 }
 
 button:active{
@@ -201,6 +202,7 @@ button:active{
 
 /* SETAS */
 .sectionHover i:hover{
+	cursor: pointer;
 	transition: color .2s ease;
 	color: var(--futurLight3);
 }
@@ -212,8 +214,4 @@ button:active{
 
 .sectionHover i:hover + p{
 	color: var(--futurLight4);
-}
-
-.sectionHover i:active + p{
-	color: var(--futurLight5);
 }

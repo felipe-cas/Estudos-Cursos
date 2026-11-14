@@ -1,6 +1,9 @@
 const naoTenhoCadastroHover = document.getElementById("_sectionNaoTenhoCadastro")
 const tenhoCadastroHover = document.getElementById("_sectionTenhoCadastro")
 
+const setaEsquerda = document.querySelector("#_setaEsquerda")
+const setaDireita  = document.querySelector("#_setaDireita")
+
 const sectionHoverTexto = document.querySelectorAll(".sectionHover p")
 
 const sectionCadastro = document.getElementById("_sectionCadastro")
@@ -15,8 +18,8 @@ naoTenhoCadastroHover.addEventListener("mouseout",  diminuiSection)
 tenhoCadastroHover.addEventListener("mouseover", aumentaSection)
 tenhoCadastroHover.addEventListener("mouseout", diminuiSection)
 
-naoTenhoCadastroHover.addEventListener("click", trocaSection)
-tenhoCadastroHover.addEventListener("click", trocaSection)
+setaDireita.addEventListener("click", trocaSection)
+setaEsquerda.addEventListener("click", trocaSection)
 
 function aumentaSection() {
 	if (auxSection == 0) {
