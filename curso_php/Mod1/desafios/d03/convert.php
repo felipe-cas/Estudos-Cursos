@@ -15,16 +15,20 @@
 		<div class="sectionInfo">
 			<div id="_resultados">
 				<?php
-					$valor = (float) str_replace(",", ".", $_POST['dinheiro']);
-					$dolar = sprintf($valor / 5.22);
+					$valor = $_POST['dinheiro'];
+					$dolar = sprintf($valor / 5.17);
 
-					$valor = number_format($valor, 2, ',', '.');
-					$dolar = number_format($dolar, 2, ',', '.');
+					// $valor = number_format($valor, 2, ',', '.');
+					// $dolar = number_format($dolar, 2, ',', '.');
 
-					echo "<p>Seu valor de <strong>R$ $valor</strong> equivale a <strong>US$ $dolar</strong></p>";
+					// Biblioteca intl (Internallization PHP)
+
+					$padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
+
+					echo "<p>Seu valor de <strong>". numfmt_format_currency($padrao, $valor, "BRL") . "</strong> equivale a <strong>" . numfmt_format_currency($padrao, $dolar, "USD"). "</strong></p>";
 				?>
 				<p id="_aviso">
-					<strong>*Cotação fixa de R$5,22 </strong>
+					<strong>*Cotação fixa de R$5,17 </strong>
 					informado diretamente no código.
 				</p>
 			</div>
