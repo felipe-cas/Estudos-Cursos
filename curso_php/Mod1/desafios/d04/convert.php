@@ -22,16 +22,18 @@
 
 					$data 	= json_decode($resp, true);
 
-					$valor 	= str_replace(",", ".", $_POST['dinheiro']);
-					$dolar  = sprintf('%.2f', $data["compra"]);
-					$final 	= sprintf('%.2f', ($valor / $dolar));
+					$valor 	= $_POST['dinheiro'];
+					$dolar  = $data["compra"];
+					$final 	= $valor / $dolar;
 
-					$dolar	= number_format($dolar, 2, ',', '.');
-					$valor 	= number_format($valor, 2, ',', '.');
-					$final	= number_format($final, 2, ',', '.');
+					// $dolar	= number_format($dolar, 2, ',', '.');
+					// $valor 	= number_format($valor, 2, ',', '.');
+					// $final	= number_format($final, 2, ',', '.');
 
-					echo "<p>Seu valor de <strong>R$ $valor</strong> equivale a <strong>US$ $final</strong></p>";
-					echo "<p><strong>*Cotação dinamica: US$ $dolar </strong> informado pela <a href='https://dolarapi.com/docs/' target='_blank' id='_link'>DolarApi</a></p>";
+					$padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
+
+					echo "<p>Seu valor de <strong>" . numfmt_format_currency($padrao, $valor, "BRL") . "</strong> equivale a <strong>" . numfmt_format_currency($padrao, $final, "USD") . "</strong></p>";
+					echo "<p><strong>*Cotação dinamica: " . numfmt_format_currency($padrao, $dolar, "USD") ."</strong> informado pela <a href='https://dolarapi.com/docs/' target='_blank' id='_link'>DolarApi</a></p>";
 				?>
 			</div>
 			<a class="botao voltar" href="index.html">Voltar</a>
