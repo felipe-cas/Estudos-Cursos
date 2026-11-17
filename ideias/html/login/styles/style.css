@@ -5,13 +5,26 @@
 	--futurLight2: #B5CC5F;
 	--futurLight3: #889947;
 
-	--futurLight4: #333333;
 	--futurLight5: #262626;
 	--futurLight6: #1C1C1C;
 	--futurLight7: #0F0F0F;  
 
 	--maskDark:	 rgba(0, 0, 0, 0.2);
 	--maskLight: rgba(255, 255, 255, 0.2);
+}
+
+.temaLight{
+	--futurLight1: #0077FF;
+	--futurLight2: #006ECF;
+	--futurLight3: #004C94;
+	
+	--futurLight5: #F8F8F8;
+	--futurLight6: #EEEEF1;
+	--futurLight7: #ECE7E4;
+
+	--maskDark: rgba(255, 255, 255, 0.2);
+	--maskLight: rgba(0, 0, 0, 0.2);
+	
 }
 
 *{

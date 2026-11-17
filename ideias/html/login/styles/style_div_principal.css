@@ -122,6 +122,7 @@
 
 	border-radius: 10px;
 	transition: .3s ease;
+	border-color: var(--maskLight);
 }
 
 .formSection legend{
