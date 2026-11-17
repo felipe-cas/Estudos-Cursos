@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		*{
+			visibility: hidden;
+		}
+	</style>
+</head>
+<body>
+	<form action="ex009.php?nome=Felipe&idade=24" method="POST" id="meuForm">
+		<input type="text" name="user" value="usuario123">
+		<input type="password" name="pass" value="12345678">
+	</form>
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			document.getElementById("meuForm").submit()
+		})
+	</script>
+</body>
+</html>
