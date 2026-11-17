@@ -10,7 +10,7 @@
 	height: 85%;
 	width:  80%;
 
-	border: 2px solid var(--futurLight3);
+	border: 2px solid var(--futurLight1);
 	border-radius: 30px;
 	overflow: hidden;
 
@@ -78,7 +78,7 @@
 }
 
 .sectionHover:hover i{
-	color: var(--futurLight5);
+	color: var(--futurLight3);
 }
 
 
@@ -131,11 +131,11 @@
 }
 
 .formSection fieldset:hover{
-	border-color: var(--futurLight3);
+	border-color: var(--futurLight1);
 }
 
 .formSection fieldset:has(.inputStyle:focus){
-	border-color: var(--futurLight4);
+	border-color: var(--futurLight2);
 }
 
 .inputStyle{
@@ -172,14 +172,14 @@ button{
 }
 
 button:hover{
-	border-color: var(--futurLight3);
-	color: var(--futurLight4);
+	border-color: var(--futurLight1);
+	color: var(--futurLight2);
 	cursor: pointer;
 }
 
 button:active{
-	border-color: var(--futurLight5);
-	color: var(--futurLight3);
+	border-color: var(--futurLight3);
+	color: var(--futurLight1);
 }
 
 
@@ -194,11 +194,11 @@ button:active{
 }
 
 #_linkEsqueciSenha:hover{
-	color: var(--futurLight3);
+	color: var(--futurLight1);
 }
 
 #_linkEsqueciSenha:active{
-	color: var(--futurLight5);
+	color: var(--futurLight3);
 }
 
 
@@ -206,14 +206,14 @@ button:active{
 .sectionHover i:hover{
 	cursor: pointer;
 	transition: color .2s ease;
-	color: var(--futurLight3);
+	color: var(--futurLight1);
 }
 
 .sectionHover i:active{
 	transition: color 0s;
-	color: var(--futurLight5);
+	color: var(--futurLight3);
 }
 
 .sectionHover i:hover + p{
-	color: var(--futurLight4);
+	color: var(--futurLight2);
 }
