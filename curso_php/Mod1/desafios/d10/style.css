@@ -1,0 +1,178 @@
+@charset "UTF8";
+
+:root{
+	--color1: #F4F5F7;
+	--color2: #9FA6A3;
+	--color3: #474746;
+	--color4: #252626;
+
+	--color5: #FF0000;
+	--color6: #CC0000;
+	--color7: #990000;
+
+	--color8: rgba(255, 255, 255, 0.2);
+}
+
+*{
+	padding: 0px;
+	margin:  0px;
+
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, Arial, sans-serif;
+}
+
+html, body{
+	height: 100vh;
+	width:  100vw;
+}
+
+body{
+	display: grid;
+	grid-template-rows: 2fr 12fr 1fr;
+
+	background-color: var(--color4);
+}
+
+header, footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: var(--color1);
+	cursor: default;
+}
+
+main{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+
+	padding: 10px;
+}
+
+
+
+/* SECTION NA MAIN */
+.sectionClass{
+	display: grid;
+	grid-template-rows: 2fr 10fr;
+	padding: 10px;
+
+	background-color: var(--color8);
+	color: var(--color1);
+	box-shadow: 0px 0px 8px #9FA6A34D;
+}
+
+.sectionClass h2{
+	text-align: center;
+	align-self: center;
+	font-size: 2em;
+	cursor: default;
+}
+
+.sectionClass form{
+	display: grid;
+	grid-template-rows: 2fr 2fr 3fr;
+
+
+	height: 100%;
+	width:  100%;
+}
+
+#_sectionForm{
+	border-radius: 30px 0px 0px 30px;
+}
+
+#_sectionResul{
+	border-radius: 0px 30px 30px 0px;
+	cursor: default;
+}
+
+
+
+/* DENTRO FORM */
+.fieldClass{
+	display: grid;
+	grid-template-columns: 3fr 6fr;
+	gap: 10px;
+
+	justify-self: center;
+	align-self: center;
+
+	height: 45%;
+	width:  80%;
+
+	padding: 0px 10px;
+	border-radius: 10px;
+
+	transition: .2s ease;
+}
+
+.fieldClass:hover{
+	border-color: var(--color5);
+}
+
+.fieldClass:focus-within{
+	border-color: var(--color6);
+}
+
+.fieldClass label{
+	justify-self: left;
+	align-self: center;
+}
+
+.fieldClass input{
+	justify-self: center;
+	align-self: center;
+
+	width: 100%;
+	height: 90%;
+
+	background-color: transparent;
+	color: var(--color1);
+	outline: none;
+	border: none;
+
+	font-size: 1.3em;
+
+	appearance: textfield;
+}
+
+.btnClass{
+	justify-self: center;
+	align-self:   center;
+
+	height: 25%;
+	width:  50%;
+
+	border-radius: 10px;
+	border: none;
+
+	background-color: var(--color1);
+	font-size: 1.2em;
+
+	transition: .2s ease;
+}
+
+.btnClass:hover{
+	background-color: var(--color6);
+	color: var(--color1);
+}
+
+.btnClass:active{
+	background-color: var(--color5);
+}
+
+
+
+/* DIV DE RESULTADOS */
+.resultadoClass{
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 20px;
+
+	justify-content: center;
+	align-items: center;
+
+	line-height: 1.5em;
+}
