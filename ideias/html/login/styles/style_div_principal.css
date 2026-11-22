@@ -168,24 +168,24 @@ button{
 	font-size: 1em;
 
 	background-color: transparent;
-	color: lightgray;
+	color: var(--bttnColors2);
 
 	outline: none;
-	border: 2px solid lightgray;
+	border: 2px solid var(--bttnColors2);
 	border-radius: 8px;
 
 	transition: .3s ease;
 }
 
 button:hover{
-	border-color: var(--futurLight1);
-	color: var(--futurLight2);
+	border-color: var(--bttnColors1);
+	color: var(--bttnColors2);
 	cursor: pointer;
 }
 
 button:active{
-	border-color: var(--futurLight3);
-	color: var(--futurLight1);
+	border-color: var(--bttnColors3);
+	color: var(--bttnColors1);
 }
 
 
@@ -194,17 +194,17 @@ button:active{
 #_linkEsqueciSenha{
 	font-size: .8em;
 	text-decoration: none;
-	color: lightgray;
+	color: var(--bttnColors2);
 
 	transition: .3s ease;
 }
 
 #_linkEsqueciSenha:hover{
-	color: var(--futurLight1);
+	color: var(--bttnColors1);
 }
 
 #_linkEsqueciSenha:active{
-	color: var(--futurLight3);
+	color: var(--bttnColors3);
 }
 
 

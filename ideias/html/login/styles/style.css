@@ -11,10 +11,15 @@
 	
 	--textFuture1: #D7F271;
 	--textFuture2: lightgray;
+	--textFuture3: #889947;
 	
 	--setasColor1: inherit;
 	--setasColor2: #889947;
 	--setasColor3: #889947;
+
+	--bttnColors1: #D7F271;
+	--bttnColors2: lightgray;
+	--bttnColors3: #889947;
 	
 	--fieldColor1: rgba(255, 255, 255, 0.2);
 	--legendColor: lightgray;
@@ -38,10 +43,15 @@
 	
 	--textFuture1: #32DE8A;
 	--textFuture2: #17663F;
+	--textFuture3: #22995F;
 	
 	--setasColor1: #EEEEF1;
 	--setasColor2: #F8F8F8;
 	--setasColor3: #22995F;
+
+	--bttnColors1: #28B36F;
+	--bttnColors2: #32DE8A;
+	--bttnColors3: #22995F;
 	
 	--fieldColor1: rgba(255, 255, 255, 0.5);
 	--legendColor: #28B36F;
