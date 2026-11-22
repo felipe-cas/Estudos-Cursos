@@ -6,15 +6,16 @@
 
 	background-color: var(--maskLight);
 	color: white;
+	color: var(--textFuture1);
 
 	height: 85%;
 	width:  80%;
 
-	border: 2px solid var(--futurLight1);
+	border: 2px solid var(--borderColor);
 	border-radius: 30px;
 	overflow: hidden;
 
-	box-shadow: 0px 0px 10px #D7F2714d;
+	box-shadow: 0px 0px 10px var(--shafuLight1);
 
 	transition: .4s ease;
 }
@@ -56,7 +57,8 @@
 	
 	justify-content: center;
 	align-items: flex-end;
-
+  color: var(--setasColor1);
+	
 	transition: .4s ease-in;
 }
 
@@ -68,6 +70,8 @@
 
 	visibility: hidden;
 	opacity: 0;
+	
+	color: var(--setasColor1);
 
 	font-size: .8em;
 	cursor: default;
@@ -78,7 +82,7 @@
 }
 
 .sectionHover:hover i{
-	color: var(--futurLight3);
+	color: var(--setasColor2);
 }
 
 
@@ -89,7 +93,8 @@
 	grid-template-rows: 1fr 4fr;
 
 	gap: 10px;
-
+  
+	
 	padding: 0px 20px 10px 20px;
 
 }
@@ -122,13 +127,13 @@
 
 	border-radius: 10px;
 	transition: .3s ease;
-	border-color: var(--maskLight);
+	border-color: var(--fieldColor1);
 }
 
 .formSection legend{
 	padding: 0px 5px;
 	margin: 0px 10px;
-	color: lightgray;
+	color: var(--legendColor);
 }
 
 .formSection fieldset:hover{
@@ -207,14 +212,14 @@ button:active{
 .sectionHover i:hover{
 	cursor: pointer;
 	transition: color .2s ease;
-	color: var(--futurLight1);
+	color: var(--setasColor1);
 }
 
 .sectionHover i:active{
 	transition: color 0s;
-	color: var(--futurLight3);
+	color: var(--setasColor3);
 }
 
 .sectionHover i:hover + p{
-	color: var(--futurLight2);
+	color: var(--setasColor2);
 }
