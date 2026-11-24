@@ -30,8 +30,9 @@
 			<form method="GET" action=<?=$_SERVER['PHP_SELF']?>>
 				<fieldset class="fieldClass">
 					<label for="_salario">Salário:</label>
-					<input type="number" name="salario" id="_salario" step="0.01" placeholder="R$" value=<?=$salario?>>
+					<input type="number" name="salario" id="_salario" step="0.01" placeholder="R$" value=<?=$salario?> min=0>
 				</fieldset>	
+				<p>Considerando o salário mínimo de <strong><?=numfmt_format_currency($padrao, 1621, "BRL")?></strong></p>
 				<button type="submit" class="btnClass">Calcular</button>
 			</form>
 		</section>
