@@ -30,7 +30,7 @@
 					<input type="number" name="preco" id="_preco" placeholder="R$" required>
 				</fieldset>	
 				<fieldset class="fieldSlide">
-					<label for="_perc" id="_labelSlide">Qual será o percental de reajuste? (25%)</label>
+					<label for="_perc">Qual será o percental de reajuste? (<strong><span id="_labelSlide">25%</span></strong>)</label>
 					<input type="range" name="perc" id="_perc" min="0" max="100" step="1" value="25">
 				</fieldset>
 				<button type="submit" class="btnClass">Reajustar</button>
@@ -53,7 +53,7 @@
 		var label = document.querySelector('#_labelSlide')
 
 		slide.addEventListener('input', () => {
-			label.textContent = `Qual será o percental de reajuste? (${slide.value}%)`;
+			label.textContent = `${slide.value}%`;
 		})
 	</script>
 </body>
