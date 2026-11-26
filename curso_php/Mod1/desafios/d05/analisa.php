@@ -15,21 +15,30 @@
 		<div class="sectionInfo">
 			<div id="_resultados">
 				<?php 
-					$num = str_replace(',', '.', $_GET['numero']);
-					$pos = strripos($num, '.');
-					
-					if ($pos == false || $pos == strlen($num) - 1) {
-						echo "<p>Não foi possivel Analisar esse número :(</p>";
+					function parseNumero() {
+						$num = str_replace(',', '.', $_GET['numero']);
+						$pos = strripos($num, '.') ?: strlen($num);
 
-					} else {
+						$p1 = str_replace('.', '', substr($num, 0, $pos));
+						$p2 = substr($num, $pos + 1);
 
-						$pInteiro = str_replace('.', '', substr($num, 0, $pos));
-						$pFracion = str_replace('.', ',', substr($num, $pos));
-						$num = $pInteiro . $pFracion;
+						$p1 = is_numeric($p1) ? $p1 : 0;
+						$p2 = is_numeric($p2) ? $p2 : 0;
 
-						echo "<p>Analisando o número <strong>$num</strong></p>";
-						echo "<ul><li>A parte inteira do número é <strong>$pInteiro</strong></li><li>A parte fracionária do número é <strong> 0$pFracion</strong></li></ul>";
+						$qt = strlen((string) $p2);
+
+						return array(
+							(float) $p1 . ',' . $p2, 	// 0 - numero completo
+							$qt,						// 1 - tamanho parte fracional
+							(int) $p1,					// 2 - parte intera numero
+							'0,' . $p2					// 3 - parte fracionaria numero
+						);
 					}
+
+					$data = parseNumero();
+
+					echo "<p>Analisando o número <strong>" . $data[0] . "</strong></p>";
+					echo "<ul><li>A parte inteira do número é <strong>" . $data[2] . "</strong></li><li>A parte fracionária do número é <strong>" . $data[3] . "</strong></li></ul>";
 				?>
 			</div>
 			<a class="botao voltar" href="index.html">Voltar</a>
